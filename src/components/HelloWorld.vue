@@ -34,7 +34,7 @@ export default {
       html2canvas(this.$refs.captureItem).then(canvas => {
         if (canvas) {
           console.log(canvas);
-          canvas2image().saveAsPNG(canvas,document.body.offsetWidth,document.body.offsetHeight,'yinuo')
+          canvas2image().saveAsPNG(canvas,document.body.offsetWidth,document.body.offsetHeight,'png')
           // canvas2image.saveAsPNG(canvas.toDataURL(), document.body.offsetWidth, document.body.offsetHeight);
           // console.log(canvas.toDataURL());
           this.$refs.test.src = canvas.toDataURL('png');
